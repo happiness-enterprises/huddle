@@ -62,8 +62,8 @@ namespace NinjaTrader.NinjaScript.Indicators
 			double ema0 = ema[0];
 			EMA[0] = ema0;
 			
-			// Since we are looking at our past SMA, we need at least N+1 periods so we have enough
-			// data to look over sma[1] to sma[N].
+			// Since we are looking at our past EMA, we need at least N+1 periods so we have enough
+			// data to look over ema[1] to ema[N].
 			if (CurrentBar < Period + 1) {
 				return;
 			}
